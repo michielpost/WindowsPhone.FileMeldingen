@@ -1,0 +1,25 @@
+TRIAL NO
+Navigation, Travel Tools
+
+File Meldingen
+
+The primary text of this application is Dutch.
+Traffic congestion information for roads in The Netherlands.
+
+Alle actuele filemeldingen uit Nederland.
+
+
+
+Flitsers
+
+The primary text of this application is Dutch.
+Mobile traffic radar information for roads in The Netherlands.
+
+Alle actuele flitsmeldingen uit Nederland.
+
+
+Files & Flitsers
+The primary text of this application is Dutch.
+Traffic congestion and mobile traffic radar information for roads in The Netherlands.
+
+Combinatie van actuele file- en flitsmeldingen uit nederland.

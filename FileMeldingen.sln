@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileMeldingen", "FileMeldingen\FileMeldingen.csproj", "{202555EA-C1D7-4377-AAD8-805CC7D44189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlitsMeldingen", "FlitsMeldingen\FlitsMeldingen.csproj", "{35DD3004-143A-41FF-AE64-3E1E77B406E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlitsMeldingen.Core", "FlitsMeldingen.Core\FlitsMeldingen.Core.csproj", "{8940C765-B80F-4ACB-8598-5266589BC325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFlitsMeldingen", "FileFlitsMeldingen\FileFlitsMeldingen.csproj", "{7D989CA3-BF28-4740-BFE5-DA7082189305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileMeldingen.Core", "FileMeldingen.Core\FileMeldingen.Core.csproj", "{12CCC21E-4D24-4AC3-8941-61C68BFCBF3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpost.WP7.Client", "Lib\mpost.WP7.Client\mpost.WP7.Client.csproj", "{34FFA57A-E3AB-4B9B-81B2-2914FE273705}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{202555EA-C1D7-4377-AAD8-805CC7D44189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202555EA-C1D7-4377-AAD8-805CC7D44189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202555EA-C1D7-4377-AAD8-805CC7D44189}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{202555EA-C1D7-4377-AAD8-805CC7D44189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202555EA-C1D7-4377-AAD8-805CC7D44189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202555EA-C1D7-4377-AAD8-805CC7D44189}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{35DD3004-143A-41FF-AE64-3E1E77B406E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35DD3004-143A-41FF-AE64-3E1E77B406E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35DD3004-143A-41FF-AE64-3E1E77B406E2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{35DD3004-143A-41FF-AE64-3E1E77B406E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35DD3004-143A-41FF-AE64-3E1E77B406E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35DD3004-143A-41FF-AE64-3E1E77B406E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8940C765-B80F-4ACB-8598-5266589BC325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8940C765-B80F-4ACB-8598-5266589BC325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8940C765-B80F-4ACB-8598-5266589BC325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8940C765-B80F-4ACB-8598-5266589BC325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D989CA3-BF28-4740-BFE5-DA7082189305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D989CA3-BF28-4740-BFE5-DA7082189305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D989CA3-BF28-4740-BFE5-DA7082189305}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7D989CA3-BF28-4740-BFE5-DA7082189305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D989CA3-BF28-4740-BFE5-DA7082189305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D989CA3-BF28-4740-BFE5-DA7082189305}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{12CCC21E-4D24-4AC3-8941-61C68BFCBF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CCC21E-4D24-4AC3-8941-61C68BFCBF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CCC21E-4D24-4AC3-8941-61C68BFCBF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CCC21E-4D24-4AC3-8941-61C68BFCBF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FFA57A-E3AB-4B9B-81B2-2914FE273705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FFA57A-E3AB-4B9B-81B2-2914FE273705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FFA57A-E3AB-4B9B-81B2-2914FE273705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FFA57A-E3AB-4B9B-81B2-2914FE273705}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

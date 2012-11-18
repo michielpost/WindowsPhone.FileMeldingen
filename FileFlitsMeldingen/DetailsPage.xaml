@@ -1,0 +1,132 @@
+﻿<phone:PhoneApplicationPage x:Class="FileFlitsMeldingen.DetailsPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            d:DesignHeight="768"
+                            d:DesignWidth="480"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            Orientation="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            SupportedOrientations="PortraitOrLandscape"
+                            mc:Ignorable="d">
+
+    <!--  LayoutRoot is the root grid where all page content is placed  -->
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--  TitleGrid is the name of the application and page title  -->
+            <StackPanel x:Name="TitlePanel"
+                        Grid.Row="0"
+                        Margin="24,24,0,12">
+                <TextBlock x:Name="PageTitle"
+                           Style="{StaticResource PhoneTextNormalStyle}"
+                           Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" />
+                <TextBlock x:Name="ListTitle"
+                           Margin="-3,-8,0,0"
+                           Style="{StaticResource PhoneTextTitle1Style}"
+                           Text="{Binding Wegnummer}" />
+            </StackPanel>
+
+            <!--  ContentPanel contains details text. Place additional content here  -->
+            <StackPanel Grid.Row="1"
+                        Margin="24,0"
+                        HorizontalAlignment="Left">
+
+                <TextBlock x:Name="FileHeaderText"
+                           Foreground="{StaticResource PhoneAccentBrush}"
+                           Style="{StaticResource PhoneTextExtraLargeStyle}"
+                           TextWrapping="Wrap"
+                           Text="{Binding Path=LocalizedResources.files, Source={StaticResource LocalizedStrings}}" />
+                <ListBox x:Name="FileListBox"
+                         Margin="0,0,0,12"
+                         IsHitTestVisible="False">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel x:Name="DataTemplateStackPanel"
+                                        Margin="0,0,0,20"
+                                        Orientation="Horizontal">
+                                <StackPanel Width="450">
+                                    <TextBlock x:Name="LocatieText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding Locatie}"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock x:Name="DetailsText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding Details}"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock x:Name="LengteText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding Lengte}"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock x:Name="VertragingText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding Vertraging}"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock x:Name="OorzaakText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding Oorzaak}"
+                                               TextWrapping="Wrap" />
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <TextBlock x:Name="FlitsHeaderText"
+                           Foreground="{StaticResource PhoneAccentBrush}"
+                           Style="{StaticResource PhoneTextExtraLargeStyle}"
+                           TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.flitsers, Source={StaticResource LocalizedStrings}}" />
+                <ListBox x:Name="FlitsListBox"
+                         Margin="0,0,0,12"
+                         IsHitTestVisible="False">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel x:Name="DataTemplateStackPanel"
+                                        Margin="0,0,0,20"
+                                        Orientation="Horizontal">
+                                <StackPanel  Width="450">
+                                    <TextBlock x:Name="DetailsText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding Details}"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock x:Name="HMPText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding HMP}"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock x:Name="TijdstipText"
+                                               Style="{StaticResource PhoneTextTitle3Style}"
+                                               Text="{Binding Tijdstip}"
+                                               TextWrapping="Wrap" />
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+
+    <!--  Sample code showing usage of ApplicationBar  -->
+    <!--
+        <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+        <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+        <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+        <shell:ApplicationBar.MenuItems>
+        <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+        <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+        </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+        </phone:PhoneApplicationPage.ApplicationBar>
+    -->
+
+</phone:PhoneApplicationPage>

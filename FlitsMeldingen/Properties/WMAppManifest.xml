@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{1a7d61e7-c5f4-49aa-a61c-b32e642d0f50}" Title="Flitsers" RuntimeType="Silverlight" Version="1.2.0.0" Genre="apps.normal" Author="Michiel Post" Description="Flitsers in Nederland" Publisher="MP Development">
+    <IconPath IsRelative="true" IsResource="false">flits_62.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="FlitsMeldingenToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">flits_173.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>Flitsers</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
